@@ -10,3 +10,11 @@ it('can create a sqlite connection', function () {
 
     expect($connection->pdo())->toBeInstanceOf(PDO::class);
 });
+
+
+it('rejects unsupported database drivers', function () {
+    new Connection(
+        'unsupported',
+        database: ':memory:'
+    );
+})->throws(InvalidArgumentException::class);
