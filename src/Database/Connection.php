@@ -4,6 +4,8 @@ namespace Kerbitgr\EasyORM\Database;
 
 use PDO;
 
+use InvalidArgumentException;
+
 class Connection
 {
     public function __construct(
