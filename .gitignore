@@ -1,0 +1,17 @@
+/vendor/
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+.phpunit.result.cache
+.phpunit.cache/
+coverage/
+*.sqlite
+*.sqlite3
+*.db
+*.log
+*.tmp
+*.temp

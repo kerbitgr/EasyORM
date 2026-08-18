@@ -1,0 +1,29 @@
+{
+    "name": "kerbitgr/easyorm",
+    "description": "Lightweight, simple, and reusable ORM for PHP applications",
+    "type": "project",
+    "require-dev": {
+        "pestphp/pest": "^5.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kerbitgr\\EasyORM\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexandros Anastasiadis"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {
+        "php": ">=8.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
