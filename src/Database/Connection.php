@@ -1,6 +1,6 @@
 <?php
 
-namespace Kerbitgr\EasyORM\Database;
+namespace Alexnastgr\EasyORM\Database;
 
 use PDO;
 

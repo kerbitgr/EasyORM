@@ -1,6 +1,6 @@
 <?php
 
-use Kerbitgr\EasyORM\Database\Connection;
+use Alexnastgr\EasyORM\Database\Connection;
 
 it('can create a sqlite connection', function () {
     $connection = new Connection(
@@ -29,4 +29,14 @@ it('can execute a query through the sqlite connection', function () {
     $result = $connection->pdo()->query('SELECT 1');
 
     expect($result->fetchColumn())->toBe(1);
+});
+
+
+it('can create a sqlite connection using configuration', function () {
+    $connection = new Connection([
+        'driver' => 'sqlite',
+        'database' => ':memory:',
+    ]);
+
+    expect($connection->pdo())->toBeInstanceOf(PDO::class);
 });
